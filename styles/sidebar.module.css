@@ -1,0 +1,21 @@
+.ul {
+    list-style-type: none;
+    color: #4A4F74;
+    padding-left: 0px;
+    padding-right: 2rem;
+}
+.li {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: #FFCC7C10;
+}
+.li:nth-child(odd) {
+    background: #FFCC7C30;
+}
+.li:first-child {
+    border-top-right-radius: 0.5rem;
+}
+.li:last-child {
+    border-bottom-right-radius: 0.5rem;
+}

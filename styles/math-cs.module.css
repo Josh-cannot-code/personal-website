@@ -1,0 +1,29 @@
+.title {
+    color: #4A4F74;
+    text-align: center;
+}
+.subtext{
+    text-align: right;
+    color: #FFCC7C;
+}
+.hr {
+    margin: 0rem auto 1rem;
+    color: #4A4F74;
+}
+
+.body {
+}
+
+.section {
+    color: #4A4F74;
+}
+
+.important {
+    color: #4A4F74;
+}
+/*
+#FFAA3C
+#4A4F74
+#FA9A94
+#FFCC7C
+ */
