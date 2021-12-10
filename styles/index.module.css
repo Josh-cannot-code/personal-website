@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 5rem 10rem auto;
+    grid-template-rows: 10% 10% auto;
     align-items: center;
 }
 .title {
@@ -12,13 +12,17 @@
     align-items: center;
     text-align: center;
     color: #4A4F74;
+    padding-bottom: 1rem;
 }
 .table {
     grid-column: 2;
     grid-row: 3;
-    justify-self: center;
     table-layout: fixed;
-    width: 50%;
+    justify-self: center;
+    justify-content: center;
+    width: auto;
+    display: inline-block;
+    padding-top: 1rem;
 }
 .button {
     display:inline-block;
@@ -35,6 +39,7 @@
     background: #FA9A9440;
     width: 15rem;
     height: 4rem;
+    justify-self: center;
 }
 .button:hover {
     background: #FA9A9460;
