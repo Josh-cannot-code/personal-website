@@ -16,6 +16,9 @@
 .table {
     grid-column: 2;
     grid-row: 3;
+    justify-self: center;
+    table-layout: fixed;
+    width: 50%;
 }
 .button {
     display:inline-block;
@@ -23,29 +26,40 @@
     margin:0 0.3em 0.3em 0;
     border-radius:0.12em;
     border-style: solid;
+    border-width: thin;
     border-color: #4A4F74;
     box-sizing: border-box;
     text-decoration:none;
     text-align:center;
     transition: all 0.2s;
-    background: #FA9A94;
+    background: #FA9A9440;
+    width: 15rem;
+    height: 4rem;
+}
+.button:hover {
+    background: #FA9A9460;
 }
 .github {
     grid-column: 2;
     grid-row: 3;
     text-align: center;
-    display: table-row;
+    justify-self: center;
 }
 .linkedin {
     grid-column: 3;
     grid-row: 3;
     text-align: center;
+    justify-self: center;
 }
 
 .mathcs {
     grid-column: 2;
     grid-row: 4;
     text-align: center;
+    justify-self: center;
+}
+.center{
+    padding-top: 0.7em;
 }
 /*
 #FFAA3C

@@ -29,26 +29,33 @@ export default function Home() {
               <div className={styles.title}>
                   <h1>This is Joshua Dall'Acqua's Home Page</h1>
                   <h2>The site is currently under construction</h2>
+                  <hr></hr>
               </div>
               <table className={styles.table}>
                   <tr>
-                  <td/><div className={styles.github}>
+                  <td><div className={styles.github}>
                       <a className={styles.button} href="https://github.com/Josh-cannot-code">
-                          Github
+                          <div className={styles.center}>
+                              Github
+                          </div>
                       </a>
-                  </div>
-                  <td/><div className={styles.linkedin}>
+                  </div></td>
+                  <td><div className={styles.linkedin}>
                       <a className={styles.button} href="https://www.linkedin.com/in/joshua-dall-acqua-2a9226227">
-                          LinkedIn
+                          <div className={styles.center}>
+                              LinkedIn
+                          </div>
                       </a>
-                  </div>
-                  <td/><div className={styles.mathcs}>
+                  </div></td>
+                  </tr>
+                <tr>
+                  <td><div className={styles.mathcs}>
                       <Link href="projects/math-cs">
                           <a className={styles.button}>
                               Connections Between<br/> Math and Computer Science
                           </a>
                       </Link>
-                  </div>
+                  </div></td>
                   </tr>
               </table>
           </div>
