@@ -38,7 +38,7 @@
     transition: all 0.2s;
     background: #FA9A9440;
     width: 15rem;
-    height: 4rem;
+    height: auto;
     justify-self: center;
 }
 .button:hover {
@@ -65,6 +65,7 @@
 }
 .center{
     padding-top: 0.7em;
+    padding-bottom: 0.7em;
 }
 /*
 #FFAA3C
