@@ -1,5 +1,6 @@
 import styles from './layout.module.css'
 import TopBar from "./top-bar";
+import Footer from "./footer";
 
 export default function Layout({children}) {
     return (
@@ -8,6 +9,7 @@ export default function Layout({children}) {
                 <div className={styles.body}>
                     {children}
                 </div>
+                <Footer/>
             </div>
         )
 }
