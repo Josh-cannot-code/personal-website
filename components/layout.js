@@ -1,11 +1,10 @@
 import styles from './layout.module.css'
-import Sidebar from "./sidebar";
+import TopBar from "./top-bar";
+
 export default function Layout({children}) {
     return (
             <div className={styles.container}>
-                <div className={styles.sidebar}>
-                    <Sidebar />
-                </div>
+                <TopBar />
                 <div className={styles.body}>
                     {children}
                 </div>

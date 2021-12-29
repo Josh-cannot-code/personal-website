@@ -1,64 +1,39 @@
-import Head from 'next/head'
-import Link from "next/link";
 import styles from "../styles/index.module.css"
 
-//TODO: MathCs Numbers
-//TODO: Square Fractal
-//TODO: CSS
-
-//colors:
-//#FFAA3C
-//#4A4F74
-//#FA9A94
-//#FFCC7C
-
 export default function Home() {
-    const mathcs = () => {
-        return (
-        <Link href="projects/math-cs">
-        </Link>
-        )
-    }
   return (
-      <>
-          <Head>
-              <title>Joshua Dall'Acqua</title>
-              <link rel="icon" href="/public/header.png" />
-          </Head>
-          <div className={styles.container}>
-              <div className={styles.title}>
-                  <h1>This is Joshua Dall'Acqua's Home Page</h1>
-                  <h2>The site is currently under construction</h2>
-                  <hr></hr>
+      <div className={styles.root}>
+          <div className={styles.body}>
+              <div className={styles.name}>
+                  Joshua <br /> Dall'Acqua
               </div>
-              <table className={styles.table}>
-                  <tr>
-                  <td><div className={styles.github}>
-                      <a className={styles.button} href="https://github.com/Josh-cannot-code">
-                          <div className={styles.center}>
-                              Github
-                          </div>
-                      </a>
-                  </div></td>
-                  <td><div className={styles.linkedin}>
-                      <a className={styles.button} href="https://www.linkedin.com/in/joshua-dall-acqua-2a9226227">
-                          <div className={styles.center}>
-                              LinkedIn
-                          </div>
-                      </a>
-                  </div></td>
-                  </tr>
-                <tr>
-                  <td><div className={styles.mathcs}>
-                      <Link href="projects/math-cs">
-                          <a className={styles.button}>
-                              Connections Between<br/> Math and Computer Science
-                          </a>
-                      </Link>
-                  </div></td>
-                  </tr>
-              </table>
+              <div className={styles.description}>
+                  <p className={styles.text1}>
+                      I am a student at McGill University studying maths and computer science. I love to solve
+                      problems. If you feel as if you have too many problems, consider hiring me to solve them.
+
+                  </p>
+              </div>
+              <div className={styles.projectsTitle}>
+                  My Projects
+              </div>
+              <hr className={styles.hr}/>
+              <div className={styles.project1Title}>
+                  "Square Wave Fractal" in Rust
+              </div>
+              <div className={styles.project1}>
+                  <p className={styles.text}>
+                      This project is based on a gift I received a few years ago made by
+                      <a href={'https://kinetrika.com/'}><u> Kinetrika</u></a>. I found myself interested in
+                      the geometry of the art piece and decided it might be a fun to program a 3D model
+                      of it. Originally, I did this in python using the MatPlotLib plotting library but
+                      felt unsatisfied with the result. A year later, I did it in Rust! I used a library
+                      called Glium to hook into OpenGL and another linear algebra library to avoid having
+                      to define matrix multiplication myself.
+                  </p>
+                  <img src={"/rust.gif"} alt={"Image could not be loaded"} className={styles.gif}/>
+              </div>
           </div>
-      </>
+      </div>
   )
 }
