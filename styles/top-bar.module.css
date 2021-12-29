@@ -19,3 +19,9 @@
     background-color: #29f8d5;
     color: #1e2b3c;
 }
+@media (max-width: 650px) {
+    .link {
+        padding: 0.2rem;
+        font-size: 10pt;
+    }
+}
