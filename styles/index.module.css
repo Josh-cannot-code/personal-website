@@ -1,5 +1,4 @@
 .root{
-    background-color: #2f455c;
     padding-bottom: 6rem;
 }
 .body {
@@ -23,13 +22,13 @@
 .text1{
     text-align: center;
     font-size: 2rem;
-    font-weight: lighter;
+    font-weight: 300;
     width: 100%;
 }
 .text {
     text-align: justify;
     font-size: 1.5rem;
-    font-weight: lighter;
+    font-weight: 300;
     color: #1dcdfe;
     display: block;
     margin-top: 0px;

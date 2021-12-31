@@ -9,7 +9,11 @@ export default function TopBar() {
                     <div className={styles.link}>Home</div>
                 </a>
             </Link>
-
+            <Link href={"/about"}>
+                <a href={''}>
+                    <div className={styles.link}>About</div>
+                </a>
+            </Link>
             <a href={'https://github.com/Josh-cannot-code'}>
                 <div className={styles.link}>GitHub</div>
             </a>

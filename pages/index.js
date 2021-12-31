@@ -1,4 +1,5 @@
 import styles from "../styles/index.module.css"
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,8 +10,11 @@ export default function Home() {
               </div>
               <div className={styles.description}>
                   <p className={styles.text1}>
-                      I am a student at McGill University studying maths and computer science. I love to solve
-                      problems. If you feel as if you have too many problems, consider hiring me to solve them.
+                      I am an aspiring software developer studying maths and computer science at McGill University.
+                      I have an affinity for problem solving and am always looking for a new challenge. I am
+                      aiming to gain experience in the tech industry, more specifically in software development,
+                      data science, or computer science.
+
 
                   </p>
               </div>
@@ -28,8 +32,7 @@ export default function Home() {
                       the geometry of the art piece and decided it might be a fun to program a 3D model
                       of it. Originally, I did this in python using the MatPlotLib plotting library but
                       felt unsatisfied with the result. A year later, I did it in Rust! I used a library
-                      called Glium to hook into OpenGL and another linear algebra library to avoid having
-                      to define matrix multiplication myself.
+                      called Glium to hook into OpenGL and nalgebra to handle some of the maths.
                       <a href={"https://github.com/Josh-cannot-code/square-wave-rust"}> <u>Link to GitHub project</u></a>
                   </p>
                   <img src={"/rust.gif"} alt={"Image could not be loaded"} className={styles.gif}/>
@@ -39,18 +42,20 @@ export default function Home() {
               </div>
               <div className={styles.project2}>
                   <p className={styles.text}>
-                      The first Thing I got setup on the Raspberry Pi was a samba network share. I quickly
-                      realized that I would need to access my files from networks other than my home. My
+                      For information about the frontend of the website see <Link href={'/about'}>
+                      <a><u>about</u>.</a>
+                  </Link>
+                      The first project on the Raspberry Pi was a samba network share. I quickly
+                      realized that I would need to access my files from networks outside my home. My
                       first thought was to make the share public but it turns out that this is actually a
-                      very bad idea. The solution ended up being a simple WireGuard VPN. I had so much fun
-                      setting that up, I decided to host my own website.
+                      very bad idea. The solution ended up being a WireGuard VPN. Setting this
+                      up gave me the confidence to host my own website. <br/> <br/>
 
-                      In hindsight, it is a bad idea to host a website yourself. I thought I was
-                      so smart because I would be saving money on hosting, however; immediately
-                      after the website posted, I realized I would still have to pay for a domain name.
-                      With all that said I had way too much fun figuring out how to get everything running.
-                      I ended up going with PM2 to manage the part of the site running serverside and
-                      Nginx to add a little bit of safety with the reverse proxy. The site itself is on
+                      In hindsight, it is a bad idea to host a website yourself. The goal was to
+                      save money on hosting but in the end hosting locally was far more of an investment.
+                      That being said, I did have fun figuring out how to get everything running.
+                      PM2 to manages the part of the site running serverside and
+                      Nginx adds a little bit of safety with the reverse proxy. The site itself is on
                       the Next.js framework.
                       <a href={"https://github.com/Josh-cannot-code/personal-websiteu"}> <u>Link to GitHub project</u></a>
                   </p>
@@ -60,14 +65,15 @@ export default function Home() {
               </div>
               <div className={styles.project3}>
                   <p className={styles.text}>
-                      The degree I'm enrolled in aims to give students an extensive background
-                      in both maths and computer science. The intuitive relationship here is that
-                      math helps make topics in computer science easier to understand. And
-                      overwhelmingly, this is the case. But once in a while there will be some
+                      My degree aims to give students an extensive background
+                      in both maths and computer science. The intuitive relationship is that
+                      math can simplify topics in computer science.
+                      Overwhelmingly, this is true case. But occasionally there will be a
                       step in a proof that feels identical to an algorithm from computer science.
-                      This simplifies the proof greatly and gives good insight into the behavior
+                      Knowing that algorithm not only makes the proof easier to
+                      understand, but it also gives insight into the behavior
                       of the theorem. Currently, I am attempting to write articles about some
-                      of these connections I have seen. The first one, which will hopefully be
+                      of these connections. The first one, which will hopefully be
                       posted soon, explores a connection between the proof that the set of
                       rational numbers is uncountable and the algorithm for a breadth first
                       traversal on a graph.

@@ -24,4 +24,8 @@
         padding: 0.2rem 0.5rem 0.2rem 0.5rem;
         font-size: 10pt;
     }
+    .items {
+        padding-top: 0.8rem;
+        padding-bottom: 0.5rem;
+    }
 }

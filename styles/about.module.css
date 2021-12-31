@@ -1,0 +1,35 @@
+.root{
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+.title {
+    display: flex;
+    justify-self: left;
+    font-size: 5rem;
+    font-weight: 300;
+    color: #34f5c5;
+    margin-top: 3rem;
+    text-shadow: 0.13rem 0.13rem #405d7d;
+    padding-left: 5%;
+}
+.text {
+    max-width: 60%;
+    display: flex;
+    justify-self: center;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #1dcdfe;
+    margin-top: 0px;
+    margin-left: 10%;
+}
+@media (max-width: 650px) {
+    .text {
+        font-size: 1rem;
+    }
+    .title {
+        font-size: 3rem;
+    }
+}
